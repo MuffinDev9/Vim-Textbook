@@ -1,0 +1,84 @@
+:root {
+	/* colours */
+	--fontcolor: whitesmoke;
+	--bgcolor: #222222;
+	--bgshadow: #0e0e0e7a;
+
+	/* radius */
+	--radius: 0.2rem;
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(fonts/BAHNSCHRIFT.TTF);
+}
+@font-face {
+    font-family: PixelFont;
+    src: url(fonts/Minecraft.ttf);
+}
+@keyframes condemned_blink_effect {
+	/* TODO: Work Out What This Means */
+	0% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
+}
+
+html {
+    font-family: Bahnschrift;
+	background-color: var(--bgcolor);
+	color: var(--fontcolor);
+}
+
+blink {
+	animation: 2s linear infinite condemned_blink_effect;
+}
+
+h1.mainTitle {
+	font-size: 100px;
+	color: #00bb00;
+    font-family: PixelFont;
+}
+
+p {
+	font-size: 150%;
+}
+
+.nav-list {
+	background: var(--bgcolor);
+	box-shadow: 0px 0px 20px var(--bgshadow);
+	padding: 1rem 0;
+	border-radius: var(--radius);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav-item {
+	list-style: none;
+	margin-right: 2rem;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: var(--fontcolor);
+}
+
+.nav-item a:hover {
+	color: #00bb00
+}
+
+.nav-item:first-child {
+	margin-right: auto;
+	margin-left: 1rem;
+}
+
+img.navhome {
+	max-width: 50px;
+	min-width: 50px;
+}
