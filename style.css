@@ -1,6 +1,7 @@
 :root {
 	/* colours */
 	--fontcolor: whitesmoke;
+	--txtshadow: rgb(230, 230, 230);
 	--bgcolor: #222222;
 	--bgshadow: #0e0e0e7a;
 
@@ -81,4 +82,11 @@ p {
 img.navhome {
 	max-width: 50px;
 	min-width: 50px;
+}
+
+p.warning {
+	color: transparent;
+	font-style: italic;
+	text-shadow: 0.2px 0.2px 0.5px var(--txtshadow);
+	font-size: x-small;
 }
